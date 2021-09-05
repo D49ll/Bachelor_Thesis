@@ -2,7 +2,7 @@ import numpy as np
 
 dt = 0.001
 
-N_SLAVES_CONTROLLED = 1
+N_SLAVES_CONTROLLED = 4
 N_SLAVES = 4
 
 num_joints = N_SLAVES * 2
@@ -17,7 +17,7 @@ kp = 5
 kd = 0.03
 
 default_speed = np.full(8, 5.0) #max velocity per joint, output space, rad/s
-default_acceleration = np.full(8, 20.0) #max acceleration per joint, output space, rad/s**2
+default_acceleration = np.full(8, 10.0) #max acceleration per joint, output space, rad/s**2
 
 down_speed = np.full(8, 10)
 down_acceleration = np.full(8, 20)
